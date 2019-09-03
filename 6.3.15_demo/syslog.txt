@@ -7,7 +7,60 @@ v6.3.15_20190220 20:39:53<RegisterSpi>
 	nResumeType [2]
 </SubscribePublicTopic>
 <RegisterFront>
-	pszFrontAddress [tcp://127.0.0.1:41205]
+	pszFrontAddress [tcp://180.168.146.187:10130]
 </RegisterFront>
 <Init>
 </Init>
+<ReqAuthenticate>
+	BrokerID [9999]
+	UserID [092586]
+	UserProductInfo []
+	AuthCode [0000000000000000]
+	AppID [simnow_client_test]
+	nRequestID [1]
+</ReqAuthenticate>
+<OnRspAuthenticate>
+	BrokerID [9999]
+	UserID [092586]
+	UserProductInfo [client]
+	AppID [simnow_client_test]
+	AppType [1]
+	ErrorMsg [正确]
+	ErrorID [0]
+	nRequestID [1]
+	bIsLast [1]
+</OnRspAuthenticate>
+<ReqUserLogin>
+	TradingDay []
+	BrokerID [9999]
+	UserID [092586]
+	Password [123456]
+	UserProductInfo []
+	InterfaceProductInfo []
+	ProtocolInfo []
+	MacAddress []
+	OneTimePassword []
+	ClientIPAddress []
+	LoginRemark []
+	ClientIPPort [0]
+	nRequestID [0]
+</ReqUserLogin>
+<OnRspUserLogin>
+	TradingDay [20190902]
+	LoginTime [18:17:02]
+	BrokerID [9999]
+	UserID [092586]
+	SystemName [TradingHosting]
+	MaxOrderRef [1]
+	SHFETime [19:03:58]
+	DCETime [19:03:58]
+	CZCETime [19:03:58]
+	FFEXTime [19:03:58]
+	INETime [--:--:--]
+	FrontID [1]
+	SessionID [1033509843]
+	ErrorMsg [CTP:登录成功。您的密码为弱密码，密码不可为连续字符]
+	ErrorID [0]
+	nRequestID [0]
+	bIsLast [1]
+</OnRspUserLogin>
